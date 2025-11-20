@@ -15,7 +15,6 @@ connectDB();
 // Initialize Express app
 const app = express();
 
-// ✅ CORS Middleware - MUST be BEFORE routes
 app.use(
   cors({
     origin: [
@@ -79,7 +78,4 @@ app.listen(PORT, () => {
     `\n🚀 Server running in ${process.env.NODE_ENV} mode on port ${PORT}`
   );
   console.log(`📡 API URL: http://localhost:${PORT}`);
-  console.log(
-    `📚 Companies endpoint: http://localhost:${PORT}/api/companies\n`
-  );
 });

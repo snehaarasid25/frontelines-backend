@@ -206,11 +206,6 @@ const seedDatabase = async () => {
 
     // Insert sample data
     const createdCompanies = await Company.insertMany(companies);
-    console.log(`✅ Seeded ${createdCompanies.length} companies to database`);
-
-    // Display success message
-    console.log("\n🎉 Database seeded successfully!");
-    console.log(`📊 Total companies: ${createdCompanies.length}`);
 
     // List all company names
     console.log("\n📋 Companies added:");
